@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+      "id": "Main",
+      "isDefault": true
+    },
+    {
+      "id": "Pagination",
+      "isDefault": false
+    },
+    {
+      "id": "POSTCall",
+      "isDefault": false
+    },
+    {
+      "id": "uploadFlow",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#D6D1F2",
+  "icon": "airplane",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

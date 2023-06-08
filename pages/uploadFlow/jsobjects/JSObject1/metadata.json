@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "uploadFlow",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "uploadFlow_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6468737babb72f7d8e4da770_647441f524239d3849bb1b9b"
+}

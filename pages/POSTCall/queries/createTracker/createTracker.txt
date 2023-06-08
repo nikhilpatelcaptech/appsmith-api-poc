@@ -1,0 +1,7 @@
+{"programId":"33", 
+ "name":"{{trackerName.text}}", 
+"description":"DummyDecription", 
+ "entity":"{{trackedEntity.selectedOptionValue}}",
+"mode":"{{trackingMethod.selectedOptionValue}}",
+"strategyId":-1,
+"conditions": [ 	{"aggrFunc":"SUM","id":-1,"max_time_success_signals":"","name":"{{caseName.text}}", "operator":"OP_EQUAL","period":"{{trackingPeriod.text}}","rank":1,"rulesetName":"c1","should_limit_num_success":false,"threashold1":"{{threshold1.text}}","threashold2":"","tracking_period_type":0,"conditionStatus":"NEW"}],"orgName":"REON_DATA"}

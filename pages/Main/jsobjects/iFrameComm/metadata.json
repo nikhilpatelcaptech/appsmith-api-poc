@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "iFrameComm",
+    "pageId": "Main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Main_iFrameComm",
+  "deleted": false,
+  "gitSyncId": "6468737babb72f7d8e4da770_6469f636bd73d2279876a5f1"
+}

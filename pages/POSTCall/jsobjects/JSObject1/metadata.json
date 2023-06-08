@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "POSTCall",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "POSTCall_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6468737babb72f7d8e4da770_647207d534583735c07860d6"
+}
