@@ -957,6 +957,14 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Main_Api1",
+              "name": "Api1",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Main_iFrameComm.listenIframeCommunication",
               "name": "iFrameComm.listenIframeCommunication",
               "collectionId": "Main_iFrameComm",
@@ -964,6 +972,17 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  windowMessageListener('http://localhost:8000', message => {\n    console.log('NIKHIL MESSAGE: ', message);\n    if (message.type === 'userData') {\n      storeValue('userContext', message.userData);\n      console.log('NIKHIL authToken: ', iFrameComm.sanitizeAuthToken(message.authToken));\n      storeValue('authToken', iFrameComm.sanitizeAuthToken(message.authToken));\n    }\n    if (message.type === 'clearState') {\n      clearStore();\n      unlistenWindowMessage('http://localhost:8000');\n    }\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Main_iFrameComm.pageload",
+              "name": "iFrameComm.pageload",
+              "collectionId": "Main_iFrameComm",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  Api1.run().then(res => {\n    console.log('ARYA AUTH RES: ', res);\n  }).catch(err => console.log(err));\n}"
               ],
               "timeoutInMillisecond": 10000
             }

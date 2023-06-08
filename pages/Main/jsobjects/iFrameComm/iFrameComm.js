@@ -1,4 +1,9 @@
 export default {
+	pageload: async () => {
+		Api1.run().then(res => {
+			console.log('ARYA AUTH RES: ', res);
+		}).catch(err => console.log(err))
+	},
 	listenIframeCommunication: async() => {
 		windowMessageListener(
 			'http://localhost:8000',
