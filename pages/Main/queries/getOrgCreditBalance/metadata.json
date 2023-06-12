@@ -20,11 +20,11 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/arya/api/v1/org-settings/credits/credit-balance/4000003",
+      "path": "/arya/api/v1/org-settings/credits/credit-balance/{{appsmith.store.userContext.currentOrgDetails.basic_details.org_id}}",
       "headers": [
         {
           "key": "x-cap-api-auth-org-id",
-          "value": "4000003"
+          "value": "{{appsmith.store.userContext.currentOrgDetails.basic_details.org_id}}"
         },
         {
           "key": "Content-Type",
@@ -32,7 +32,7 @@
         },
         {
           "key": "x-cap-remote-user",
-          "value": "4"
+          "value": "{{appsmith.store.userContext.user.refID}}"
         },
         {
           "key": "Authorization",
@@ -57,13 +57,24 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[3].value"
+      },
+      {
+        "key": "headers[2].value"
+      },
+      {
+        "key": "headers[0].value"
+      },
+      {
+        "key": "path"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.authToken"
+      "appsmith.store.authToken",
+      "appsmith.store.userContext.currentOrgDetails.basic_details.org_id",
+      "appsmith.store.userContext.user.refID"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
