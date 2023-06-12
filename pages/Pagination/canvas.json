@@ -616,25 +616,23 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Pagination_getExtendedFields",
-              "name": "getExtendedFields",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.authToken"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Pagination_JSObject1.listenIframeCommunication",
               "name": "JSObject1.listenIframeCommunication",
               "collectionId": "Pagination_JSObject1",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  windowMessageListener('https://devenv-crm.cc.capillarytech.com', message => {\n    if (message.type === 'userData') {\n      storeValue('userContext', message.userData);\n      storeValue('authToken', JSObject1.sanitizeAuthToken(message.authToken));\n    }\n    if (message.type === 'clearState') {\n      clearStore();\n      unlistenWindowMessage('https://devenv-crm.cc.capillarytech.com');\n    }\n  });\n}"
+                "async () => {\n  windowMessageListener('https://devenv-crm.cc.capillarytech.com', message => {\n    if (message.type === 'userData') {\n      storeValue('userContext', message.userData);\n      storeValue('authToken', message.authToken);\n    }\n    if (message.type === 'clearState') {\n      clearStore();\n      unlistenWindowMessage('https://devenv-crm.cc.capillarytech.com');\n    }\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pagination_getExtendedFields",
+              "name": "getExtendedFields",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.authToken"
               ],
               "timeoutInMillisecond": 10000
             }

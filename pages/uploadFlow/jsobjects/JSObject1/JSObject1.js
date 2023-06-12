@@ -5,7 +5,7 @@ export default {
 			(message) => {
 				if (message.type === 'userData') {
 					storeValue('userContext', message.userData);
-					storeValue('authToken', this.sanitizeAuthToken(message.authToken));
+					storeValue('authToken', message.authToken);
 				}
 				if (message.type === 'clearState') {
 					clearStore();
@@ -13,7 +13,7 @@ export default {
 				}
 			});
 	},
-	sanitizeAuthToken: (token = '') => {
-		return token.substring(1, token.length-1)
-	}
+	// sanitizeAuthToken: (token = '') => {
+	// return token.substring(1, token.length-1)
+	// }
 }

@@ -16,14 +16,14 @@
     "pageId": "Main",
     "collectionId": "Main_iFrameComm",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
   "id": "Main_iFrameComm.listenIframeCommunication",
   "deleted": false,
-  "gitSyncId": "6468737babb72f7d8e4da770_6469f644bd73d2279876a5f9"
+  "gitSyncId": "6481549ddd9afe76bf32e6e5_648707950fe56767df934c79"
 }

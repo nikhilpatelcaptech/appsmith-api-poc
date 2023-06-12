@@ -6,8 +6,8 @@ export default {
 				console.log('NIKHIL MESSAGE: ', message);
 				if (message.type === 'userData') {
 					storeValue('userContext', message.userData);
-					console.log('NIKHIL authToken: ', this.sanitizeAuthToken(message.authToken));
-					storeValue('authToken', this.sanitizeAuthToken(message.authToken));
+					console.log('NIKHIL authToken: ', message.authToken);
+					storeValue('authToken', message.authToken);
 				}
 				if (message.type === 'clearState') {
 					clearStore();
@@ -15,7 +15,7 @@ export default {
 				}
 			});
 	},
-	sanitizeAuthToken: (token = '') => {
-		return token.substring(1, token.length-1)
-	}
+	// sanitizeAuthToken: (token = '') => {
+	// return token.substring(1, token.length-1)
+	// }
 }
