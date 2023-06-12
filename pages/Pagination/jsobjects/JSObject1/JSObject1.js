@@ -3,6 +3,7 @@ export default {
 		windowMessageListener(
 			'https://devenv-crm.cc.capillarytech.com',
 			(message) => {
+				console.log('NIKHIL message2: ', message);
 				if (message.type === 'userData') {
 					storeValue('userContext', message.userData);
 					storeValue('authToken', message.authToken);
