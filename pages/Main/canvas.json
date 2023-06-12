@@ -960,7 +960,7 @@
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "3yx5vkmnzm",
                       "minWidth": 450,
-                      "isVisible": "{{!getOrgCreditBalance.data.isExecutionSuccess}}",
+                      "isVisible": "{{getOrgCreditBalance.data.success === false}}",
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "version": 1,
