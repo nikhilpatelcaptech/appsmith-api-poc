@@ -80,7 +80,7 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 28,
                       "widgetName": "Button1",
-                      "onClick": "{{iFrameComm.getOrgBalance()}}",
+                      "onClick": "{{getOrgCreditBalance.run()}}",
                       "buttonColor": "#16a34a",
                       "dynamicPropertyPathList": [
                         {

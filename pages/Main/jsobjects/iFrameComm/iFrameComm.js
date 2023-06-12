@@ -14,8 +14,5 @@ export default {
 					unlistenWindowMessage('https://devenv-crm.cc.capillarytech.com');
 				}
 			});
-	},
-	getOrgBalance: () => {
-		getOrgCreditBalance.run().catch(err => showAlert(err));
 	}
 }
