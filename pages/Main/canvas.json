@@ -952,7 +952,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{getOrgCreditBalance.data}}",
+                      "text": "{{getOrgCreditBalance.data.errors.name}}: {{getOrgCreditBalance.data.errors.what}}",
                       "key": "l2pu02qkq5",
                       "isDeprecated": false,
                       "rightColumn": 58,
