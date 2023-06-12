@@ -664,7 +664,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  windowMessageListener('http://localhost:8000', message => {\n    if (message.type === 'userData') {\n      storeValue('userContext', message.userData);\n      storeValue('authToken', JSObject1.sanitizeAuthToken(message.authToken));\n    }\n    if (message.type === 'clearState') {\n      clearStore();\n      unlistenWindowMessage('http://localhost:8000');\n    }\n  });\n}"
+                "async () => {\n  windowMessageListener('https://devenv-crm.cc.capillarytech.com', message => {\n    if (message.type === 'userData') {\n      storeValue('userContext', message.userData);\n      storeValue('authToken', JSObject1.sanitizeAuthToken(message.authToken));\n    }\n    if (message.type === 'clearState') {\n      clearStore();\n      unlistenWindowMessage('https://devenv-crm.cc.capillarytech.com');\n    }\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

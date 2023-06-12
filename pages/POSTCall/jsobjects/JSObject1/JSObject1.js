@@ -1,7 +1,7 @@
 export default {
 	listenIframeCommunication: async() => {
 		windowMessageListener(
-			'http://localhost:8000',
+			'https://devenv-crm.cc.capillarytech.com',
 			(message) => {
 				if (message.type === 'userData') {
 					storeValue('userContext', message.userData);
@@ -9,7 +9,7 @@ export default {
 				}
 				if (message.type === 'clearState') {
 					clearStore();
-					unlistenWindowMessage('http://localhost:8000');
+					unlistenWindowMessage('https://devenv-crm.cc.capillarytech.com');
 				}
 			});
 	},

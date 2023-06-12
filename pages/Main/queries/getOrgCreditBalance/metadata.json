@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "http://host.docker.internal:2024"
+        "url": "https://devenv-crm.cc.capillarytech.com"
       },
       "invalids": [],
       "messages": [],
