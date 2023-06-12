@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "listenIframeCommunication",
-    "fullyQualifiedName": "iFrameComm.listenIframeCommunication",
+    "name": "getOrgBalance",
+    "fullyQualifiedName": "iFrameComm.getOrgBalance",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_iFrameComm.listenIframeCommunication",
+  "id": "Main_iFrameComm.getOrgBalance",
   "deleted": false,
-  "gitSyncId": "6481549ddd9afe76bf32e6e5_648707950fe56767df934c79"
+  "gitSyncId": "6481549ddd9afe76bf32e6e5_648729200fe56767df934d32"
 }

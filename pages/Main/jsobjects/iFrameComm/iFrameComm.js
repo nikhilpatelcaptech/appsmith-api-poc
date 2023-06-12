@@ -15,7 +15,7 @@ export default {
 				}
 			});
 	},
-	// sanitizeAuthToken: (token = '') => {
-	// return token.substring(1, token.length-1)
-	// }
+	getOrgBalance: () => {
+		getOrgCreditBalance.run().catch(err => showAlert(err));
+	}
 }
